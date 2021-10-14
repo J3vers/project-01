@@ -1,0 +1,45 @@
+.navbar {
+    background-color: #628395;
+}
+
+ul {
+    text-align:center;
+}
+.navbar a {
+    color:rgb(18, 12, 22);    
+}
+
+.navbar a:hover {
+    color:rgb(216, 140, 154);
+}
+
+body {
+    background-color:#1C2826;
+}
+
+h1 {
+    color:rgb(216, 140, 154);
+}
+
+h2 {
+    color:#D9D0DE;
+}
+
+.tab-content{
+    background-color: #628395;
+    color:black;
+}
+
+.nav-tabs{
+    background-color: #628395;
+}
+.row {
+    padding-bottom: 150px;
+    padding-top:50px;
+}
+
+.sizing {
+    width:300px;
+    height:auto;
+}
+

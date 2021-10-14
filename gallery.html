@@ -5,8 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- JavaScript -->
+    <script src="javaScript/script.js"></script>
 </head>
 <body>
+    <!--Bootstrap Nav Bar-->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="assets/camera-solid.svg" width="30" height="30"alt="Camera Icon">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     
+        <div class="collapse navbar-collapse navbar-inner" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="gallery.html">Gallery <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">  
+          <!--Page Contents-->
+          <main>
+            <h1>Photo Gallery</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quam consectetur voluptatem cumque sint iusto hic nesciunt eos optio beatae?</h2>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#first">First Tab</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#second">Second Tab</a>
+                  </li>
+            </ul>
+
+            <!--Bootstrap Tabs-->
+            <div class="tab-content">
+                <!--First Tab-->
+                <div class="tab-pane container active" id="first">
+                    <div class="galleryGrid">
+                        <div class="row">
+                            <div class="col-sm-4 gallery">
+                                <a href="#">
+                                <img class='sizing' src="images/placeholder-image.png">
+                                </a>
+                                <div class="galTitle"><h3>Image 1</h3></div>
+                            </div>
+                            <div class="col-sm-4 gallery">
+                                <a href="#">
+                                <img class='sizing' src="images/placeholder-image.png">
+                                </a>
+                                <div class="galTitle"><h3>Image 2</h3></div>
+                            </div>
+                            <div class="col-sm-4 gallery">
+                                <a href="#">
+                                <img class='sizing' src="images/placeholder-image.png">
+                                </a>
+                                <div class="galTitle"><h3>Image 3</h3></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4 gallery">
+                                <a href="#">
+                                <img src="images/placeholder-image.png">
+                                </a>
+                                <div class="galTitle"><h3>Image 4</h3></div>
+                            </div>
+                            <div class="col-sm-4 gallery">
+                                <a href="#">
+                                <img src="images/placeholder-image.png">
+                                </a>
+                                <div class="galTitle"><h3>Image 5</h3></div>
+                            </div>
+                            <div class="col-sm-4 gallery">
+                                <a href="#">
+                                <img src="images/placeholder-image.png">
+                                </a>
+                                <div class="galTitle"><h3>Image 6</h3></div>
+                            </div>       
+                        </div>
+                    </div>
+                </div>
+                <!--Second Tab-->
+                
+            </div>
+        </main>  
+        
+    </div>
 </body>
 </html>
