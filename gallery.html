@@ -40,19 +40,23 @@
           <main>
             <h1>Photo Gallery</h1>
             <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quam consectetur voluptatem cumque sint iusto hic nesciunt eos optio beatae?</h2>
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#first">First Tab</a>
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab" aria-controls="home" aria-selected="true" href="javascript:void(0)">
+                        First Tab
+                    </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#second">Second Tab</a>
-                  </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="profile" aria-selected="false" href="javascript:void(0)">
+                        Second Tab
+                    </a>
+                </li>
             </ul>
 
             <!--Bootstrap Tabs-->
             <div class="tab-content">
                 <!--First Tab-->
-                <div class="tab-pane container active" id="first">
+                <div class="tab-pane fade show active container" id="first" role="tabpanel" aria-labelledby="first-tab">
                     <div class="galleryGrid">
                         <div class="row">
                             <div class="col-sm-4 gallery">
@@ -98,10 +102,56 @@
                     </div>
                 </div>
                 <!--Second Tab-->
-                
+                <div class="tab-pane fade container" id="second" role="tabpanel" aria-labelledby="second-tab">
+                    <div class="galleryGrid">
+                        <div class="row">
+                            <div class="col-sm-4 gallery">
+                                <a href="#">
+                                <img class='sizing' src="images/placeholder-image.png">
+                                </a>
+                                <div class="galTitle"><h3>Image 1</h3></div>
+                            </div>
+                            <div class="col-sm-4 gallery">
+                                <a href="#">
+                                <img class='sizing' src="images/placeholder-image.png">
+                                </a>
+                                <div class="galTitle"><h3>Image 2</h3></div>
+                            </div>
+                            <div class="col-sm-4 gallery">
+                                <a href="#">
+                                <img class='sizing' src="images/placeholder-image.png">
+                                </a>
+                                <div class="galTitle"><h3>Image 3</h3></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4 gallery">
+                                <a href="#">
+                                <img src="images/placeholder-image.png">
+                                </a>
+                                <div class="galTitle"><h3>Image 4</h3></div>
+                            </div>
+                            <div class="col-sm-4 gallery">
+                                <a href="#">
+                                <img src="images/placeholder-image.png">
+                                </a>
+                                <div class="galTitle"><h3>Image 5</h3></div>
+                            </div>
+                            <div class="col-sm-4 gallery">
+                                <a href="#">
+                                <img src="images/placeholder-image.png">
+                                </a>
+                                <div class="galTitle"><h3>Image 6</h3></div>
+                            </div>       
+                        </div>
+                    </div>
+                </div>                                               
             </div>
         </main>  
         
     </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
